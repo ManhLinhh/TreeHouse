@@ -1,0 +1,183 @@
+
+        <header class="header header-bg">
+            <div class="grid wide">
+                <!-- Navbar -->
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="/loader.html" class="header__navbar-item-link">Trang Web nhà phát triển</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-title--no-pointer">Kết nối</span>
+                            <a href="/loader.html" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="/loader.html" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Header Notify -->
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-notify">
+                            <i class="header__navbar-icon far fa-bell"></i>
+                            Thông báo
+                            <div class="header__notify">
+                                <img src="/img/NoNotify.png" alt="No Notify" class="header__notify-img">
+                                <p class="header__notify-title">Đăng nhập để xem Thông báo</p>
+                                <div class="header__notify-form">
+                                    <p onclick="openRegisterForm()" class="header__notify-desc">Đăng ký</p>
+                                    <p onclick="openLoginForm()" class="header__notify-desc">Đăng nhập</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="/loader.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li onclick="openRegisterForm()"
+                            class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            Đăng ký
+                        </li>
+                        <li onclick="openLoginForm()" class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
+                            <img src="/img/no-user.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">User_2089</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="/loader.html">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="/loader.html">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="/loader.html">Lịch sử</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="/loader.html">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="/img/TreeHouse-logo-long.png" alt="TreeHouse">
+                        </a>
+                    </div>
+                    <!-- Header Search -->
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <form class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input autocomplete="off" type="text" name="q" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            <!-- Header Search Famous -->
+                            <div class="header__search-famous">
+                                <h3 class="header__search-famous-heading">Top tìm kiếm</h3>
+                                <ul class="header__search-famous-list">
+                                    <li class="header__search-famous-item">
+                                        <a href="/loader.html">Word 2020</a>
+                                    </li>
+                                    <li class="header__search-famous-item">
+                                        <a href="/loader.html">Windows 10</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- Header Cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <!-- <span class="header__cart-notice">3</span> -->
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list  header__cart-list--no-cart">
+                                <img src="/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+                                <!-- Cart -->
+                                <div class="header__cart--have-cart">
+                                    <h4 class="header__cart-heading">
+                                        Sản phẩm đã thêm
+                                    </h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="/img/no-img.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Word 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="/img/Microsoft-Excel-logo-512x512.png" alt=""
+                                                class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Excel 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="/img/window 10.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Word 2020</h5>
+                                                    <span class="header__cart-item-price">Miễn phí</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-desc">
+                                                        Phân loại: Office 365
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="/loader.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header-sort-bar">
+                <li class="header-sort-item header-sort-item--active">
+                    <a href="/loader.html" class="header-sort-link">Phổ biến</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="/loader.html" class="header-sort-link">Mới nhất</a>
+                </li>
+                <li class="header-sort-item">
+                    <a href="/loader.html" class="header-sort-link">Tải nhiều</a>
+                </li>
+            </ul>
+        </header>
